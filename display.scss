@@ -10,11 +10,12 @@
 }
 
 @mixin buttons-pos(){
+  position: absolute;
   float: right;
 }
 
 @mixin button-looks(){
-  background: lightcyan;
+  background: rgb(56, 196, 196);
   box-shadow: 3px 1px 1px grey;
 }
 
