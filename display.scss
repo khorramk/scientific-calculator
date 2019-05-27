@@ -1,0 +1,27 @@
+@mixin Size(){
+   height: 65px;
+   max-width: 100%;
+}
+
+@mixin buttons-shape (){
+   border-radius: 50%;
+   width: 50px;
+   height: 50px;
+}
+
+@mixin buttons-pos(){
+  float: right;
+}
+
+@mixin Looks(){
+  box-shadow: 5px 1px 2px grey;
+  cursor:cell;
+  background:blueviolet;
+  
+}
+
+.display{
+  @include Size();
+  @include Looks();
+
+}
