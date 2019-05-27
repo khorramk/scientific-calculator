@@ -13,6 +13,11 @@
   float: right;
 }
 
+@mixin button-looks(){
+  background: lightcyan;
+  box-shadow: 3px 1px 1px grey;
+}
+
 @mixin Looks(){
   box-shadow: 5px 1px 2px grey;
   cursor:cell;
@@ -24,4 +29,10 @@
   @include Size();
   @include Looks();
 
+}
+
+.btn-numbers{
+  @include buttons-shape();
+  @include buttons-pos();
+  @include button-looks();
 }
